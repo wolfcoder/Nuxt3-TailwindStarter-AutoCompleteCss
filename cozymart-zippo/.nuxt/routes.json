@@ -1,0 +1,50 @@
+[
+  {
+    "name": "beda-zippo-asli-dan-palsu",
+    "path": "/beda-zippo-asli-dan-palsu",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\beda-zippo-asli-dan-palsu\\\\index.vue",
+    "chunkName": "pages/beda-zippo-asli-dan-palsu/index"
+  },
+  {
+    "name": "cara-beli-zippo",
+    "path": "/cara-beli-zippo",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\cara-beli-zippo\\\\index.vue",
+    "chunkName": "pages/cara-beli-zippo/index"
+  },
+  {
+    "name": "finishing-zippo",
+    "path": "/finishing-zippo",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\finishing-zippo\\\\index.vue",
+    "chunkName": "pages/finishing-zippo/index"
+  },
+  {
+    "name": "sejarah-zippo-dan-cozymart",
+    "path": "/sejarah-zippo-dan-cozymart",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\sejarah-zippo-dan-cozymart\\\\index.vue",
+    "chunkName": "pages/sejarah-zippo-dan-cozymart/index"
+  },
+  {
+    "name": "zippo",
+    "path": "/zippo",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\zippo\\\\index.vue",
+    "chunkName": "pages/zippo/index"
+  },
+  {
+    "name": "zippo-accessories",
+    "path": "/zippo-accessories",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\zippo-accessories\\\\index.vue",
+    "chunkName": "pages/zippo-accessories/index"
+  },
+  {
+    "name": "zippo-pipe",
+    "path": "/zippo-pipe",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\zippo-pipe\\\\index.vue",
+    "chunkName": "pages/zippo-pipe/index"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]

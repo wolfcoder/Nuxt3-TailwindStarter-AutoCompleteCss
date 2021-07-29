@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Flint",
+    "price": "IDR 25.000",
+    "stock": null,
+    "img": "https://firebasestorage.googleapis.com/v0/b/cozymart.appspot.com/o/flints.png?alt=media&token=d9845a08-b46a-43b7-87d5-7c206c3e692c"
+  },
+  {
+    "title": "Wick",
+    "price": "IDR 25.000",
+    "stock": null,
+    "img": "https://firebasestorage.googleapis.com/v0/b/cozymart.appspot.com/o/wick.jpeg?alt=media&token=21898b19-628d-4c22-866a-8d15aa271c42"
+  },
+  {
+    "title": "Fluid 118ml",
+    "price": "IDR 35.000",
+    "stock": null,
+    "img": "https://firebasestorage.googleapis.com/v0/b/cozymart.appspot.com/o/Fluid-zippo-118ml.jpg?alt=media&token=49a9f711-28c5-4d7c-b857-dc4d19d8d9db"
+  },
+  {
+    "title": "Cotton And Felt",
+    "price": "IDR 80.000",
+    "stock": null,
+    "img": "https://firebasestorage.googleapis.com/v0/b/cozymart.appspot.com/o/cotton-and-felt.png?alt=media&token=929f6ae3-435a-4361-b402-9c4c63f5169e"
+  }
+]

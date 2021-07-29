@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/beda-zippo-asli-dan-palsu", {data:[{}],fetch:{},mutations:void 0});

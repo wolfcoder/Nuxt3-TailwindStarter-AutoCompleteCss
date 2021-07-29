@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/zippo-accessories", {data:[{}],fetch:{},mutations:void 0});
