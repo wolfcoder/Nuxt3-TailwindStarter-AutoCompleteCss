@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/sejarah-zippo-dan-cozymart", {data:[{}],fetch:{},mutations:void 0});

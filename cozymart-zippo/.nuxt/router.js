@@ -8,6 +8,7 @@ const _46d84dae = () => interopDefault(import('..\\pages\\beda-zippo-asli-dan-pa
 const _9127941a = () => interopDefault(import('..\\pages\\cara-beli-zippo\\index.vue' /* webpackChunkName: "pages/cara-beli-zippo/index" */))
 const _04e04724 = () => interopDefault(import('..\\pages\\finishing-zippo\\index.vue' /* webpackChunkName: "pages/finishing-zippo/index" */))
 const _13210887 = () => interopDefault(import('..\\pages\\sejarah-zippo-dan-cozymart\\index.vue' /* webpackChunkName: "pages/sejarah-zippo-dan-cozymart/index" */))
+const _89ec21c8 = () => interopDefault(import('..\\pages\\test\\index.vue' /* webpackChunkName: "pages/test/index" */))
 const _0c1d82f4 = () => interopDefault(import('..\\pages\\zippo\\index.vue' /* webpackChunkName: "pages/zippo/index" */))
 const _7b6bb87a = () => interopDefault(import('..\\pages\\zippo-accessories\\index.vue' /* webpackChunkName: "pages/zippo-accessories/index" */))
 const _41f47693 = () => interopDefault(import('..\\pages\\zippo-pipe\\index.vue' /* webpackChunkName: "pages/zippo-pipe/index" */))
@@ -40,6 +41,10 @@ export const routerOptions = {
     path: "/sejarah-zippo-dan-cozymart",
     component: _13210887,
     name: "sejarah-zippo-dan-cozymart"
+  }, {
+    path: "/test",
+    component: _89ec21c8,
+    name: "test"
   }, {
     path: "/zippo",
     component: _0c1d82f4,

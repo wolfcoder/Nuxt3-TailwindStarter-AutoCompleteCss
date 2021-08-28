@@ -13,9 +13,11 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_61f02eee from 'nuxt_plugin_plugin_61f02eee' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_b88dbba8 from 'nuxt_plugin_axios_b88dbba8' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_workbox_1bc9bc48 from 'nuxt_plugin_workbox_1bc9bc48' // Source: .\\workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_77102e70 from 'nuxt_plugin_metaplugin_77102e70' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_6dc0e388 from 'nuxt_plugin_iconplugin_6dc0e388' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
+import nuxt_plugin_googleanalytics_3ced627a from 'nuxt_plugin_googleanalytics_3ced627a' // Source: .\\google-analytics.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -65,7 +67,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Cozymart","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Jual zippo original 100% dan custom grafir zippo"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Cozymart","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Jual zippo original 100% dan custom grafir zippo"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"cozymart-zippo"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"cozymart-zippo"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"cozymart-zippo"},{"hid":"og:description","name":"og:description","property":"og:description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.65a896.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.65a896.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.1bfba054.json","hid":"manifest"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
 
     router,
     nuxt: {
@@ -183,6 +185,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_61f02eee(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_axios_b88dbba8 === 'function') {
+    await nuxt_plugin_axios_b88dbba8(app.context, inject)
+  }
+
   if (process.client && typeof nuxt_plugin_workbox_1bc9bc48 === 'function') {
     await nuxt_plugin_workbox_1bc9bc48(app.context, inject)
   }
@@ -193,6 +199,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_iconplugin_6dc0e388 === 'function') {
     await nuxt_plugin_iconplugin_6dc0e388(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_googleanalytics_3ced627a === 'function') {
+    await nuxt_plugin_googleanalytics_3ced627a(app.context, inject)
   }
 
   // Lock enablePreview in context

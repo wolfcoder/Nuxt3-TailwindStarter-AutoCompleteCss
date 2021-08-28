@@ -2,8 +2,8 @@
   <div class="container mx-auto px-3 ">
     <h3 class="sub-title">{{ title }}</h3>
     <div class="product-wrapper">
-      <div class="product" v-for="(product, index) in getProductsDisplay" :key="index" @click="showModal(product)">
-        <img class="product-image w-32" :src="product.img" :alt="product.title"/>
+      <div class="product" v-for="(product, index) in getProductsDisplay" :key="index" @click="showModal(product)" >
+        <img class="product-image w-32" :src="product.img" :alt="product.title" :data-stock="product.stock"/>
       </div>
       <div class="modal" v-if="isShowModal">
         <div @click="closeModal" class="flex">
@@ -21,7 +21,8 @@
             <img :src="productItemImg" class="w-40" :alt="productItemTitle"/>
           </div>
           <h3 class="text-xl my-2">{{ productItemTitle }}</h3>
-          <h4 class="text-red-600 mb-3">{{ productItemPrice }}</h4>
+          <h4 class="text-red-600 mb-3"><span class="text-red-500 ">Price  Rp. </span><span class="line-through">  {{ new Intl.NumberFormat('de-DE').format(productItemPrice) }}</span>  </h4>
+          <h4 class="text-red-600 mb-3"><span class="text-yellow-600">DISCOUNT Rp. {{ getDiscountedPrice }} </span>  </h4>
           <button @click="handlerWhatsApp" class="product-button green-whatsapp"> Chat WhatsApp</button>
         </div>
       </div>
@@ -47,7 +48,6 @@ export default {
   data() {
     return {
       isShowModal: false,
-      products: this.productInput,
 
       productItemTitle: '',
       productItemPrice: '',
@@ -61,8 +61,12 @@ export default {
     }
   },
   computed: {
+    getDiscountedPrice() {
+      let price = this.productItemPrice * 95/100
+      return new Intl.NumberFormat('de-DE').format(price)
+    },
     getProductsReady() {
-      return this.products.filter(p => p.stock === null)
+      return this.productInput.filter(p => p.stock !== "Out of Stock")
     },
 
     getProductsDisplay() {
@@ -86,7 +90,7 @@ export default {
       this.scrollHeightTotal = document.body.scrollHeight
       this.scrollPosition = window.innerHeight + window.scrollY
 
-      console.log('total: ' + this.scrollHeightTotal, 'y: ' + this.scrollPosition);
+      // console.log('total: ' + this.scrollHeightTotal, 'y: ' + this.scrollPosition);
 
       if ((this.scrollHeightTotal - this.scrollPosition) < 400) {
         const totalProductReady = this.getProductsReady.length

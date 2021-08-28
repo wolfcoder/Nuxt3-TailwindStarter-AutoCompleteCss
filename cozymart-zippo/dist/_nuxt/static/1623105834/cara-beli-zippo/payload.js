@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/cara-beli-zippo", {data:[{}],fetch:{},mutations:void 0});

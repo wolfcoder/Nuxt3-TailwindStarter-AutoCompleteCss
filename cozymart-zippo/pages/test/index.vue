@@ -26,8 +26,8 @@ export default {
 
   methods: {
     async fetchData() {
-      const dataJson = await axios.get('/data-zippo.json')
-      // const dataJson = await axios.get('http://167.172.70.208:8088/api')
+      // const dataJson = await axios.get('/data-zippo.json')
+      const dataJson = await axios.get('https://coboy.online/api')
       // const dataJson = await axios.get('https://cozymart.herokuapp.com/api')
       return this.productInput = dataJson.data
     }

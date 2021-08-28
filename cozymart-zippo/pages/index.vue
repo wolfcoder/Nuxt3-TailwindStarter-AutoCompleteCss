@@ -10,14 +10,14 @@
 
 
     </div>
-    <div class="invisible md:visible md:w-1/3">Side div</div>
+    <div class="invisible md:visible md:w-1/3"></div>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import ProductWrapper from "~/components/ProductWrapper";
 import PageHeaderMain from "~/components/PageHeaderMain";
-import data1 from '@/data/data-zippo.json'
 
 export default {
   name: 'index',
@@ -29,9 +29,21 @@ export default {
     }
   },
 
+  methods: {
+    async fetchData() {
+      const dataJson = await axios.get('/data-zippo.json')
+      // const dataJson = await axios.get('http://167.172.70.208:8088/api')
+      // const dataJson = await axios.get('https://cozymart.herokuapp.com/api')
+      return this.productInput = dataJson.data
+    }
+  },
+
   created() {
-    this.productInput = [...data1]
-  }
+    this.fetchData()
+
+    }
+     // this.productInput = [ ...page2, ...page4, ...page3, ...page1, ...page5, ...page6, ...page7, ...page8, ...page9, ...page10, ...page11, ...page12]
+
 }
 </script>
 

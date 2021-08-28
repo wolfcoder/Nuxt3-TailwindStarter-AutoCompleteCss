@@ -51,6 +51,13 @@ export default {
     },
 
     toggleMenu() {
+      let htmlBody = document.getElementsByTagName('body');
+
+      if (htmlBody[0].style.overflow === '' || htmlBody[0].style.overflow === 'scroll') {
+        htmlBody[0].style.overflow = 'hidden'
+      } else {
+        htmlBody[0].style.overflow = 'scroll'
+      }
       this.isMenu = !this.isMenu;
     }
   },

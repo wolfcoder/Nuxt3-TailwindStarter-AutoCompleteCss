@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style>
+
 .green-whatsapp{
   background: #28a745;
 }

@@ -18,17 +18,18 @@ class ZippolighterSpider(scrapy.Spider):
         end
     '''
     
-    page = 1
+    page = 12
 
    
 
     def start_requests(self):
-        yield SplashRequest(f"http://zippo.co.id/getproduct/windproof?parameter=brand[]_attribute[]_rating[]&priceFrom=0&priceTo=2730000&sortby=popularity&viewperpage=20&page={self.page}", self.parse, endpoint="execute",
-                            args={'lua_source': self.scripts})
+        yield SplashRequest(
+            f"http://zippo.co.id/getproduct/windproof?parameter=brand[]_attribute[]_rating[]&priceFrom=0&priceTo=2730000&sortby=popularity&viewperpage=80&page={self.page}", 
+            self.parse, endpoint="execute",args={'lua_source': self.scripts})
 
     def parse(self, response):
         for product in response.xpath("//div[@class='product-box smaller']"):
-            stock = product.xpath(".//ul[@class='badge-list']/li[2]/span/text()").get()
+            stock = product.xpath(".//ul[@class='badge-list']/li[1]/span/text()").get()
 
             yield {
                 'title': product.xpath(".//h3[@class='ngc-title']/a/text()").get(),
