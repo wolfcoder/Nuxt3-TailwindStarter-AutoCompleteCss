@@ -2,64 +2,64 @@
   {
     "name": "beda-zippo-asli-dan-palsu",
     "path": "/beda-zippo-asli-dan-palsu",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\beda-zippo-asli-dan-palsu\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\beda-zippo-asli-dan-palsu\\\\index.vue",
     "chunkName": "pages/beda-zippo-asli-dan-palsu/index",
-    "_name": "_46d84dae"
+    "_name": "_a7a1e7e0"
   },
   {
     "name": "cara-beli-zippo",
     "path": "/cara-beli-zippo",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\cara-beli-zippo\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\cara-beli-zippo\\\\index.vue",
     "chunkName": "pages/cara-beli-zippo/index",
-    "_name": "_9127941a"
+    "_name": "_9250e4cc"
   },
   {
     "name": "finishing-zippo",
     "path": "/finishing-zippo",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\finishing-zippo\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\finishing-zippo\\\\index.vue",
     "chunkName": "pages/finishing-zippo/index",
-    "_name": "_04e04724"
+    "_name": "_044b9ecb"
   },
   {
     "name": "sejarah-zippo-dan-cozymart",
     "path": "/sejarah-zippo-dan-cozymart",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\sejarah-zippo-dan-cozymart\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\sejarah-zippo-dan-cozymart\\\\index.vue",
     "chunkName": "pages/sejarah-zippo-dan-cozymart/index",
-    "_name": "_13210887"
+    "_name": "_36ec3280"
   },
   {
     "name": "test",
     "path": "/test",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\test\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\test\\\\index.vue",
     "chunkName": "pages/test/index",
-    "_name": "_89ec21c8"
+    "_name": "_2568d9d5"
   },
   {
     "name": "zippo",
     "path": "/zippo",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\zippo\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\zippo\\\\index.vue",
     "chunkName": "pages/zippo/index",
-    "_name": "_0c1d82f4"
+    "_name": "_4920aa26"
   },
   {
     "name": "zippo-accessories",
     "path": "/zippo-accessories",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\zippo-accessories\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\zippo-accessories\\\\index.vue",
     "chunkName": "pages/zippo-accessories/index",
-    "_name": "_7b6bb87a"
+    "_name": "_d783a4ac"
   },
   {
     "name": "zippo-pipe",
     "path": "/zippo-pipe",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\zippo-pipe\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\zippo-pipe\\\\index.vue",
     "chunkName": "pages/zippo-pipe/index",
-    "_name": "_41f47693"
+    "_name": "_cb469ae8"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\bams\\\\scrapyprojects\\\\zippocoid\\\\cozymart-zippo\\\\pages\\\\index.vue",
+    "component": "D:\\\\cozymart\\\\cozymart-zippo\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_2f93d16e"
+    "_name": "_5b437ae7"
   }
 ]
