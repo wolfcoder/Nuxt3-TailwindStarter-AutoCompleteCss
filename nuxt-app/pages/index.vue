@@ -1,16 +1,20 @@
 
 <template>
   <Hero/>
-  <ProductWrapper :productInput="productInput" title="Zippo 100% original"/>
+   <ProductWrapper :productInput="productInput" title="Zippo 100% original"/>
+
 </template>
 <script setup >
 
-import {useFetch, useLazyFetch} from "nuxt/app";
+import {useFetch} from "nuxt/app";
 
 definePageMeta({
   layout: 'layout-default'
 })
 
-const {data: productInput} = await useLazyFetch(() => 'https://hepengku.com/joined-json-results/data-zippo.json')
+const {data:productInput} = await useFetch(() => 'https://hepengku.com/joined-json-results/data-zippo.json',   {
+  server: false
+})
+console.log(productInput);
 
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto md:py-16 pt-16 lg:pt-24">
+  <div class="container mx-auto max-w-6xl md:py-16 pt-16 lg:pt-24">
     <h2 class="text-3xl font-semibold text-gray-800 mb-6 md:mb-12 text-center">{{ title }}</h2>
-    <div class="product-wrapper">
+    <div class="product-wrapper grid grid-cols-2 md:grid-cols-4">
       <div class="product" v-for="(product, index) in getProductsDisplay" :key="index" @click="showModal(product)" >
         <img class="product-image w-32" :src="product.img" :alt="product.title" :data-stock="product.stock"/>
       </div>
@@ -53,7 +53,7 @@ export default {
       productItemPrice: '',
       productItemImg: '',
       waNumber: '+6285655991221',
-      perPage: 10,
+      perPage: 8,
 
       scrollPosition: 0,
 

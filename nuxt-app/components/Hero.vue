@@ -37,7 +37,7 @@
         </svg>
         <span class="text-xs text-gray-400 ml-4 ">Rating 5 di  Google Bisnis dari 100+ Review</span>
       </div>
-      <h1 class="text-4xl leading-10 font-semibold">Buat Zippo mu unik dan menarik disini.</h1>
+      <h1 class="text-4xl leading-10 font-bold">Buat Zippo mu <span class="text-brandPrimary"> Unik </span>dan <span class="text-brandPrimary">Menarik </span> disini.</h1>
       <ul class="flex flex-col gap-2">
         <li class="inline-flex">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +186,7 @@
       <!-- End testimoni person-->
     </div>
     <div class="hero-image mt-6 md:mt-6 px-4 md:px-0 md:pr-4">
-      <img src="~/assets/images/zippo-custom-printing-grafir-laser.png"
+      <img class="h-auto md:h-[600px] w-auto" src="~/assets/images/zippo-custom-printing-grafir-laser.png"
            alt="Zippo Custom">
     </div>
   </section>
