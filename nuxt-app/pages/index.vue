@@ -1,14 +1,16 @@
-<template>
-  <div class="max-w-6xl bg-brandPrimary">
-    <h1 class="text-3xl font-bold text-white">
-      Hello world! tailwind
-    </h1>
-  </div>
 
+<template>
+  <Hero/>
+  <ProductWrapper :productInput="productInput" title="Zippo 100% original"/>
 </template>
-<script lang="ts" setup>
+<script setup >
+
+import {useFetch, useLazyFetch} from "nuxt/app";
 
 definePageMeta({
   layout: 'layout-default'
 })
+
+const {data: productInput} = await useLazyFetch(() => 'https://hepengku.com/joined-json-results/data-zippo.json')
+
 </script>

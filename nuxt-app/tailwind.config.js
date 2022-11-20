@@ -14,7 +14,8 @@ module.exports = {
       colors: {
         brandPrimary: '#dd1229',
        brandSecondary: '#CCB683',
-       brandTertiary: '#65C4D8'
+       brandTertiary: '#65C4D8',
+       brandWhatsApp: 'rgb(37 211 102)'
       }
     },
   },

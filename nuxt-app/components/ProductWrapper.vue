@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto px-3 ">
-    <h3 class="sub-title">{{ title }}</h3>
+  <div class="container mx-auto md:py-16 pt-16 lg:pt-24">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6 md:mb-12 text-center">{{ title }}</h2>
     <div class="product-wrapper">
       <div class="product" v-for="(product, index) in getProductsDisplay" :key="index" @click="showModal(product)" >
         <img class="product-image w-32" :src="product.img" :alt="product.title" :data-stock="product.stock"/>
@@ -38,7 +38,7 @@ export default {
   props: {
     title:{
       type: String,
-      default: 'Produk'
+      default: 'Zippo Original Pabrikan'
     },
     productInput: {
       type: Array,
