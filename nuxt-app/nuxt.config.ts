@@ -10,7 +10,6 @@ export default defineNuxtConfig({
             tailwindcss: {},
             autoprefixer: {},
         },
-    },
-    buildDir: 'nuxt-build'
+    }
 
 })

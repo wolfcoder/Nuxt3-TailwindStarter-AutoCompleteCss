@@ -5,3 +5,11 @@
 **/obj
 .vs
 .idea
+
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

@@ -1,7 +1,7 @@
 
 <template>
   <Hero/>
-   <ProductWrapper :productInput="productInput" title="Zippo 100% original"/>
+<!--   <ProductWrapper :productInput="productInput" title="Zippo 100% original"/>-->
 
 </template>
 <script setup >
@@ -12,9 +12,9 @@ definePageMeta({
   layout: 'layout-default'
 })
 
-const {data:productInput} = await useFetch(() => 'https://hepengku.com/joined-json-results/data-zippo.json',   {
-  server: false
-})
-console.log(productInput);
+// const {data:productInput} = await useFetch(() => 'https://hepengku.com/joined-json-results/data-zippo.json',   {
+//   server: false
+// })
+// console.log(productInput);
 
 </script>
