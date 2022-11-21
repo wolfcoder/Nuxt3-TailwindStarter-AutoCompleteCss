@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port=5002",
+    "dev": "nuxt dev --port=5003",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -15,6 +15,6 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.6"
+    "node-fetch-native": "^1.0.1"
   }
 }

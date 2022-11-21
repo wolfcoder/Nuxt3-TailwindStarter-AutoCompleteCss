@@ -1,20 +1,29 @@
-
 <template>
   <Hero/>
-<!--   <ProductWrapper :productInput="productInput" title="Zippo 100% original"/>-->
-
+  <ProductWrapper :productInput="productInput" title="Zippo 100% original dari Pabrikan"/>
 </template>
-<script setup >
-
-import {useFetch} from "nuxt/app";
+<script>
 
 definePageMeta({
   layout: 'layout-default'
 })
 
-// const {data:productInput} = await useFetch(() => 'https://hepengku.com/joined-json-results/data-zippo.json',   {
-//   server: false
-// })
-// console.log(productInput);
+export default {
+  data() {
+    return {
+      productInput: []
+    }
+  },
 
+  mounted(){
+    this.fetchData()
+  },
+
+  methods: {
+    async fetchData() {
+      fetch('https://hepengku.com/joined-json-results/data-zippo.json').then((r) => r.json())
+          .then((data) => this.productInput = data);
+    }
+  }
+}
 </script>

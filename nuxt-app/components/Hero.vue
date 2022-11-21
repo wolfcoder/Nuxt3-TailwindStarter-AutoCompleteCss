@@ -82,7 +82,7 @@
       </ul>
 
       <div class="flex flex-col md:flex-row gap-6">
-        <a class="bg-brandWhatsApp rounded-full inline-flex py-2 px-4 gap-2 text-white" target="_blank"
+        <a class="bg-brandWhatsApp hover:bg-green-500 rounded-full inline-flex py-2 px-4 gap-2 text-white" target="_blank"
            href="https://api.whatsapp.com/send?phone=+6285655991221&amp;text=Halo%20Cozymart, Saya ingin pesan Zippo custom">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -94,9 +94,9 @@
           </svg>
           <span>Kontak WhatsApp Sekarang</span>
         </a>
-        <a class="border border-brandWhatsApp rounded-full inline-flex py-2 px-4 gap-2 text-brandWhatsApp"
+        <a class="border border-brandWhatsApp text-brandWhatsApp hover:bg-brandWhatsApp hover:text-white group rounded-full inline-flex py-2 px-4 gap-2 "
            href="#produk">
-          <svg class="stroke-brandWhatsApp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="stroke-brandWhatsApp group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M5 3V7V3ZM3 5H7H3ZM6 17V21V17ZM4 19H8H4ZM13 3L15.286 9.857L21 12L15.286 14.143L13 21L10.714 14.143L5 12L10.714 9.857L13 3Z"
                 stroke-linecap="round" stroke-linejoin="round"></path>

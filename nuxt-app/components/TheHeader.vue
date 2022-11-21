@@ -4,7 +4,7 @@
       <div class="flex justify-between py-4 px-4 items-center">
         <div class="flex items-center gap-6">
           <a href="/">
-            <img class="h-6 md:h-4 w-auto" src="~/assets/images/ZIPPO_Logo.png" alt="Cozymart" /> </a>
+            <img class="h-6 md:h-6 w-auto" src="~/assets/images/ZIPPO_Logo.png" alt="Cozymart" /> </a>
           <span class="text-xxs hidden md:block text-gray-600">Zippo original, Zippo Custom Grafir, dan Zippo Printing </span>
 
         </div>
