@@ -10,7 +10,6 @@ export default defineNuxtConfig({
             viewport: 'width=500, initial-scale=1',
             title: 'Zippo original, Zippo Custom Grafir, dan Zippo Printing',
             meta: [
-                // <meta name="description" content="My amazing site">
                 { name: 'description', content: 'Cozymart.net menjual produk Zippo original, Zippo Custom Grafir, dan Zippo Printing' }
             ],
         }
