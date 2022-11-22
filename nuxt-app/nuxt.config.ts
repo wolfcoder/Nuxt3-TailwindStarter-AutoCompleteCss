@@ -3,17 +3,17 @@ export default defineNuxtConfig({
     // server: {
     //     host: 'localhost' // default: localhost
     // },
-    // Global page headers: https://go.nuxtjs.dev/config-head
-    head: {
-        title: 'Cozymart',
-        meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Jual zippo original 100% dan custom grafir zippo' }
-        ],
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+    // https://nuxt.com/docs/getting-started/seo-meta
+    app: {
+        head: {
+            charset: 'utf-16',
+            viewport: 'width=500, initial-scale=1',
+            title: 'Zippo original, Zippo Custom Grafir, dan Zippo Printing',
+            meta: [
+                // <meta name="description" content="My amazing site">
+                { name: 'description', content: 'Cozymart.net menjual produk Zippo original, Zippo Custom Grafir, dan Zippo Printing' }
+            ],
+        }
     },
     css: ['~/assets/css/tailwind.css'],
     postcss: {

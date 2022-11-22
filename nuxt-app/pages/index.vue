@@ -9,6 +9,16 @@ definePageMeta({
 })
 
 export default {
+  head: {
+    title: 'Cozymart - Jual Zipo Original',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Zippo original'
+      }
+    ],
+  },
   data() {
     return {
       productInput: []
