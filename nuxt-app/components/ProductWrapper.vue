@@ -5,7 +5,7 @@
       <p class="text-center text-base">Klik di gambar zippo nya untuk melihat detail dan melakukan order melalui
         WhatsApp.</p>
     </header>
-    <div class="product-wrapper w-full grid grid-cols-2 md:grid-cols-4 ">
+    <div class="product-wrapper w-full grid grid-cols-2 md:grid-cols-4 gap-8">
       <div class="flex justify-center" v-for="(product, index) in getProductsDisplay" :key="index"
            @click="showModal(product)">
         <img class="product-image w-32" :src="product.img" :alt="product.title" :data-stock="product.stock"/>
