@@ -82,7 +82,7 @@
       </ul>
 
       <div class="flex flex-col md:flex-row gap-6">
-        <a class="bg-brandWhatsApp hover:bg-green-500 rounded-full inline-flex py-2 px-4 gap-2 text-white" target="_blank"
+        <a @click="submitWaHero" class="bg-brandWhatsApp hover:bg-green-500 rounded-full inline-flex py-2 px-4 gap-2 text-white" target="_blank"
            href="https://api.whatsapp.com/send?phone=+6285655991221&amp;text=Halo%20Cozymart, Saya ingin pesan Zippo custom">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -191,8 +191,13 @@
     </div>
   </section>
 </template>
-<script>
-export default {
-  name: 'Hero'
+<script setup>
+import {useGtm} from "@gtm-support/vue-gtm";
+
+const $gtm = useGtm();
+
+async function submitWaHero() {
+  // console.log("WA Hero")
+  $gtm.trackEvent({event: 'All Click'})
 }
 </script>
