@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.0.0",
-    "node-fetch-native": "^1.0.1"
+    "node-fetch-native": "^1.0.1",
+    "vue-gtag": "^2.0.1"
   }
 }
