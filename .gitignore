@@ -1,11 +1,4 @@
-**/node_modules/**
-.DS_Store
-**/.workspace.xml
-**/bin
-**/obj
-.vs
-.idea
-
+node_modules
 *.log*
 .nuxt
 .nitro
@@ -13,4 +6,3 @@
 .output
 .env
 dist
-package-lock.json
