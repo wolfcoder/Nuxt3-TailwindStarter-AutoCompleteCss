@@ -18,7 +18,7 @@ module.exports = {
       // path to the folder on the server your app will be
       path : '/www/wwwroot/cozymart/',
       'pre-deploy-local': '',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
     }
   }
