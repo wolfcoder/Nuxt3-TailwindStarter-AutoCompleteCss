@@ -44,9 +44,12 @@
 </template>
 
 <script>
+definePageMeta({
+  layout: 'layout-default'
+})
 
 export default {
   name: 'SejarahZippo',
+
 }
 </script>
-
