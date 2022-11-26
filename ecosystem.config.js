@@ -10,9 +10,10 @@ module.exports = {
 
   deploy : {
     production : {
-    //   user : 'root',
+      user : 'root',
       // Multi host is possible, just by passing IPs/hostname as an array. IP of your host(s) here
       host : ["185.210.144.30"],
+      key: 'deploy.key',
       ref  : 'origin/master',
       repo : 'git@github.com:wolfcoder/cozymart.git',
       // path to the folder on the server your app will be
@@ -20,7 +21,11 @@ module.exports = {
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
    //  'post-deploy' : 'npm run build && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
+      'pre-setup': '',
+      env: {
+        NODE_ENV: 'production',
+        // DATABASE_ADDRESS: process.env.DATABASE_ADDRESS
+      },
     }
   }
 };
