@@ -1,14 +1,14 @@
 <template>
   <div id="produk" class="container mx-auto max-w-6xl md:py-16 pt-16 lg:pt-24">
-    <header class="mt-b md:mb-12">
-      <h2 class="text-3xl === text-gray-800 text-center mb-2 md:mb-3 ">{{ title }}</h2>
-      <p class="text-center text-base">Klik di gambar zippo nya untuk melihat detail dan melakukan order melalui
+    <header class="mt-b mb-6 md:mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-2 md:mb-3 ">{{ title }}</h2>
+      <p class="text-center text-sm md:text-base">Klik di gambar produk untuk melihat detail dan melakukan order melalui
         WhatsApp.</p>
     </header>
-    <div class="product-wrapper w-full grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="product-wrapper w-full grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-10 md:gap-y-16 md:gap-x-8">
       <div class="flex justify-center" v-for="(product, index) in getProductsDisplay" :key="index"
            @click="showModal(product)">
-        <img class="product-image w-32" :src="product.img" :alt="product.title" :data-stock="product.stock"/>
+        <img class="product-image w-32 h-auto md:w-40" :src="product.img" :alt="product.title" :data-stock="product.stock"/>
       </div>
       <div class="modal" v-if="isShowModal">
         <div @click="closeModal" class="flex">
@@ -41,7 +41,7 @@
                   fill="white"></path>
             </svg>
             </span>
-            <span>Kontak WhatsApp Sekarang</span>
+            <span>Order Lewat WhatsApp Sekarang</span>
           </button>
 
         </div>
@@ -103,10 +103,21 @@ export default {
       this.productItemTitle = product.title
       this.productItemPrice = product.price
       this.productItemImg = product.img
+      this.scrollToggle()
     },
 
     closeModal() {
       this.isShowModal = false
+      this.scrollToggle()
+    },
+
+    scrollToggle() {
+      this.htmlBody = document.getElementsByTagName('body');
+      if (this.htmlBody[0].style.overflow === '' || this.htmlBody[0].style.overflow === 'scroll') {
+        this.htmlBody[0].style.overflow = 'hidden'
+      } else {
+        this.htmlBody[0].style.removeProperty('overflow')
+      }
     },
 
     updateScroll() {
