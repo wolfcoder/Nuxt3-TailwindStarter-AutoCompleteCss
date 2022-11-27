@@ -18,4 +18,6 @@ jobs:
           port: 22
           script:
             cd /www/wwwroot/cozymart/
-            git pull origin
+            git pull origin master
+            git status
+            npm install --only-prod
