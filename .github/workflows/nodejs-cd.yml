@@ -20,5 +20,7 @@ jobs:
             git pull origin
             git status
             npm install --only-prod
+            rmdir .nuxt
+            rmdir .output
             npm run build
             pm2 restart nuxtappcozymart
