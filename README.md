@@ -44,3 +44,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## built with CI/CD
 cozymart.net
 27/8/2022 08:28
+27/8/2022 08:52
