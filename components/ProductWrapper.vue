@@ -30,7 +30,7 @@
               class="line-through">  {{ new Intl.NumberFormat('de-DE').format(productItemPrice) }}</span></h4>
           <h4 class="text-red-600 mb-3"><span class="text-yellow-600">DISCOUNT Rp. {{ getDiscountedPrice }} </span></h4>
           <button @click="handlerWhatsApp"
-                  class="bg-brandWhatsApp hover:bg-green-500 rounded-full inline-flex  py-2 px-4 gap-2 text-white items-center">
+                  class="wa-button wa-single-product bg-brandWhatsApp hover:bg-green-500 rounded-full inline-flex  py-2 px-4 gap-2 text-white items-center">
             <span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
