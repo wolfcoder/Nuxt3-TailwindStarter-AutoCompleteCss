@@ -41,4 +41,5 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-Cozymart.id
+## built with CI/CD
+cozymart.net
