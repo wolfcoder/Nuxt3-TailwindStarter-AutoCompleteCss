@@ -7,9 +7,9 @@ export default defineNuxtConfig({
     app: {
         head: {
             charset: 'utf-16',
-            title: 'Zippo original, Zippo Custom Grafir, dan Zippo Printing',
+            title: 'JonPantau',
             meta: [
-                { name: 'description', content: 'Cozymart.net menjual produk Zippo original, Zippo Custom Grafir, dan Zippo Printing' }
+                { name: 'description', content: 'Memantau sosial media berdasarkan keyword, hash dan mention' }
             ],
         }
     },

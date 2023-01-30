@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port=5003",
+    "dev": "nuxt dev --port=5004",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.0.0",
+    "apexcharts": "^3.36.3",
     "node-fetch-native": "^1.0.1",
-    "vue-gtag": "^2.0.1"
+    "vue-gtag": "^2.0.1",
+    "vue3-apexcharts": "^1.4.1"
   }
 }

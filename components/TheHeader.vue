@@ -5,7 +5,7 @@
         <div class="flex items-center gap-6">
           <a href="/">
             <img class="h-6 md:h-6 w-auto" src="~/assets/images/ZIPPO_Logo.png" alt="Cozymart" /> </a>
-          <span class="text-xxs hidden md:block text-gray-600">Zippo original, Zippo Custom Grafir, dan Zippo Printing </span>
+          <span class="text-xxs hidden md:block text-gray-600">Memantau sosial media berdasarkan keyword </span>
 
         </div>
         <div class="flex items-center gap-6 font-semibold">

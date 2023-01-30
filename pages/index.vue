@@ -1,6 +1,8 @@
 <template>
-  <Hero/>
-  <ProductWrapper :productInput="productInput" title="Zippo 100% original dari Pabrikan"/>
+  <client-only>
+    <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
+  </client-only>
+  {{ foo }}
 </template>
 <script>
 
@@ -9,30 +11,21 @@ definePageMeta({
 })
 
 export default {
-  head: {
-    title: 'Cozymart - Jual Zipo Original',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Zippo original'
-      }
-    ],
-  },
   data() {
     return {
-      productInput: []
-    }
-  },
-
-  mounted(){
-    this.fetchData()
-  },
-
-  methods: {
-    async fetchData() {
-      fetch('https://hepengku.com/joined-json-results/data-zippo.json').then((r) => r.json())
-          .then((data) => this.productInput = data);
+      foo: "hello foo bar froom",
+      options: {
+        chart: {
+          id: 'vuechart-example'
+        },
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+        }
+      },
+      series: [{
+        name: 'series-1',
+        data: [30, 40, 45, 50, 49, 60, 70, 91, 100 ]
+      }]
     }
   }
 }
